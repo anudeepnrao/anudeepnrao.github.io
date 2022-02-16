@@ -185,7 +185,85 @@
 		</div>
 	</section>
 	 -->
-			
+		<p>
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  </p>	
 
 
     <footer>
@@ -194,110 +272,5 @@
 		</div>
     </footer>
   
-      
-  <!-- Javascript
-  ================================================== -->
-  <!-- Placed at the end of the document so the pages load faster -->
- 
-  <script src="//code.jquery.com/jquery-2.1.1.min.js"></script>
-  <script src="//netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
-  
-  <script>
-   $(document).ready(function(){
-	   $(window).bind('scroll', function() {
-	   var navHeight = $( window ).height() - 70;
-			 if ($(window).scrollTop() > navHeight) {
-				 $('nav').addClass('navbar-fixed-top');
-				 $('nav').addClass('navbar-inverse');
-			 }
-			 else {
-				 $('nav').removeClass('navbar-fixed-top');
-				 $('nav').removeClass('navbar-inverse');
-			 }
-		});
-	});
-	
-  function setScroll(){
-	var homePosition = 0;
-	var bodyPosition = jQuery('#mainBody').offset().top;
-	var aboutPosition = jQuery('#aboutMe').offset().top;
-	var projectPosition = jQuery('#projectPage').offset().top;
-	
-	// When #scroll is clicked
-	jQuery('#header__more').click(function(){
-		jQuery('html, body').animate({scrollTop:bodyPosition}, 'slow');
-		return false;
-	});
-	jQuery('#home').click(function(){
-		jQuery('html, body').animate({scrollTop:homePosition}, 'slow');
-		return false;
-	});
-	jQuery('#about').click(function(){
-		jQuery('html, body').animate({scrollTop:aboutPosition}, 'slow');
-		return false;
-	});
-	jQuery('#projects').click(function(){
-		jQuery('html, body').animate({scrollTop:projectPosition}, 'slow');
-		return false;
-	});
-  }
-  $(window).resize(setScroll);
-  $(window).focus(setScroll);
-  $(document).ready(setScroll);
-
-  /* fix vertical when not overflow
-call fullscreenFix() if .fullscreen content changes */
-function fullscreenFix(){
-    var h = $('body').height();
-    // set .fullscreen height
-    $(".content-b").each(function(i){
-        if($(this).innerHeight() <= h){
-            $(this).closest(".fullscreen").addClass("not-overflow");
-        }
-    });
-}
-$(window).resize(fullscreenFix);
-$(window).focus(fullscreenFix);
-$(document).ready(fullscreenFix);
-
-/* resize background images */
-function backgroundResize(){
-    var windowH = $(window).height();
-    $(".background").each(function(i){
-        var path = $(this);
-        // variables
-        var contW = path.width();
-        var contH = path.height();
-        var imgW = path.attr("data-img-width");
-        var imgH = path.attr("data-img-height");
-        var ratio = imgW / imgH;
-        // overflowing difference
-        var diff = parseFloat(path.attr("data-diff"));
-        diff = diff ? diff : 0;
-        // remaining height to have fullscreen image only on parallax
-        var remainingH = 0;
-        if(path.hasClass("parallax")){
-            var maxH = contH > windowH ? contH : windowH;
-            remainingH = windowH - contH;
-        }
-        // set img values depending on cont
-        imgH = contH + remainingH + diff;
-        imgW = imgH * ratio;
-        // fix when too large
-        if(contW > imgW){
-            imgW = contW;
-            imgH = imgW / ratio;
-        }
-        //
-        path.data("resized-imgW", imgW);
-        path.data("resized-imgH", imgH);
-        path.css("background-size", imgW + "px " + imgH + "px");
-    });
-}
-$(window).resize(backgroundResize);
-$(window).focus(backgroundResize);
-$(document).ready(backgroundResize);
-  
-  </script>
 </body>
 </html>
