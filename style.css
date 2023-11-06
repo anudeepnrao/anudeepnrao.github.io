@@ -16,3 +16,20 @@
   border: 1px solid #000;
   padding: 10px;
 }
+.project-grid {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.project-grid .project {
+  width: 50%;
+  border: 1px solid #000;
+  padding: 10px;
+}
+
+/* List view */
+.project-list .project {
+  width: 100%;
+  border: 1px solid #000;
+  padding: 10px;
+}
