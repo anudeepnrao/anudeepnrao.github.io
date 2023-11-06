@@ -12,3 +12,7 @@
 .prj_img{
   max-width: 20rem;
 }
+.project {
+  border: 1px solid #000;
+  padding: 10px;
+}
