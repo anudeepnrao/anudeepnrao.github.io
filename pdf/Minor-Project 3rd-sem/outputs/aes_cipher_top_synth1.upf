@@ -1,0 +1,50 @@
+########################################################################################
+#                                                                                      #
+# Created by Genus(TM) Synthesis Solution 17.21-s010_1 on Sat Dec 30 13:21:33 IST 2023 #
+#                                                                                      #
+########################################################################################
+
+upf_version 2.0
+
+create_supply_set cdn_ss
+
+create_power_domain pd_SOC_TOP \
+	 -include_scope
+
+create_supply_port vss \
+	 -direction in
+
+create_supply_port vdd \
+	 -direction in
+
+create_supply_net vss \
+	 -resolve unresolved
+
+create_supply_net vdd \
+	 -resolve unresolved
+
+create_supply_set cdn_ss \
+	 -function { power vdd } \
+	 -function { ground vss } \
+	 -update
+
+create_power_domain pd_SOC_TOP \
+	 -supply { primary cdn_ss } \
+	 -update
+
+connect_supply_net vss \
+	 -ports vss
+
+connect_supply_net vdd \
+	 -ports vdd
+
+add_port_state vdd \
+	 -state { active_state 1 } \
+	 -state { off_state off }
+
+create_pst pstSoc \
+	 -supplies vdd
+
+add_pst_state state1 \
+	 -pst pstSoc \
+	 -state active_state
