@@ -80,7 +80,7 @@
 }
 
 .hero-social-nav {
-  display: inline-flex;
+  display: inline-flex !important;
   justify-content: center;
 }
 
