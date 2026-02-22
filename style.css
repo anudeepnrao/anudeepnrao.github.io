@@ -94,6 +94,9 @@
   background-position: center;
   background-size: contain;
   width: 10rem;
+  min-width: 10rem;
+  max-width: 10rem;
+  flex: 0 0 10rem;
 }
 
 .client-logo-gfs { background-image: url(img/GFS.png); }
