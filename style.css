@@ -36,3 +36,86 @@
 .liogr{
   max-width: 10%;
 }
+
+.page-shell {
+  position: relative;
+  height: auto;
+  margin-top: 0.5rem;
+  margin-left: 10%;
+  margin-right: 10%;
+  overflow: auto;
+}
+
+.hero-bg {
+  background-image: url(img/pcb3.jpg);
+}
+
+.hero-content {
+  color: #efefea;
+}
+
+.hero-content-inner {
+  text-align: center;
+}
+
+.hero-profile-wrapper {
+  background: no-repeat center;
+}
+
+.hero-profile-image {
+  align-content: center;
+  border-radius: 100%;
+  width: 15%;
+  box-sizing: border-box;
+  margin-top: 1em;
+}
+
+.hero-name {
+  margin-block-start: 0.3em;
+  margin-bottom: 0;
+}
+
+.hero-tagline {
+  margin-block-start: 0.2em;
+}
+
+.hero-social-nav {
+  display: inline-flex;
+}
+
+.navscroll {
+  padding-top: 30px;
+}
+
+.client-logo {
+  height: 50px;
+  background-color: #efefea;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  width: 10rem;
+}
+
+.client-logo-gfs { background-image: url(img/GFS.png); }
+.client-logo-ats { background-image: url(img/ATS_logo.jpg); }
+.client-logo-anr { background-image: url(img/anr_logo1_small.webp); }
+.client-logo-abhyuditha { background-image: url(img/0.jpg); }
+.client-logo-rb { background-image: url(img/rb.jpg); }
+.client-logo-sdmit { background-image: url(img/sdmit.jpg); }
+.client-logo-rvce { background-image: url(img/rvce.png); }
+
+.company-time-tight {
+  margin-top: 0;
+}
+
+.company-description {
+  width: 60%;
+}
+
+.company-list-indented {
+  margin-inline-start: 2rem;
+}
+
+.footer-spacer {
+  height: 5em;
+}
