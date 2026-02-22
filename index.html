@@ -27,25 +27,24 @@
 </head>
 
 <body data-bs-spy="scroll" data-bs-target="#navscroll" data-bs-offset="0"
-  style="position:relative;height:auto;margin-top: 0.5rem;margin-left: 10%;margin-right: 10%;overflow: auto;"
+  class="page-shell"
   tabindex="0">
   <!--<div class="fullscreen background" style="background-image: url(img/UT-backdrop.jpg);" data-img-width="3200" data-img-height="1620">  -->
-  <div class="fullscreen background" style="background-image: url(img/pcb3.jpg);" data-img-width="2125"
+  <div class="fullscreen background hero-bg" data-img-width="2125"
     data-img-height="1080">
-    <div class="content-a" style="color: #efefea;">
-      <div class="content-b" style="text-align:center">
-        <div style="background: no-repeat center; ">
-          <img src="img/0.jpg" alt="anudeep"
-            style="align-content:center; border-radius:100%; width:15%; box-sizing:border-box; margin-top:1em;"></img>
+    <div class="content-a hero-content">
+      <div class="content-b hero-content-inner">
+        <div class="hero-profile-wrapper">
+          <img src="img/0.jpg" alt="anudeep" class="hero-profile-image"></img>
         </div>
-        <h2 style="margin-block-start:0.3em; margin-bottom:0;">Anudeep N Rao</h2>
+        <h2 class="hero-name">Anudeep N Rao</h2>
         <br>
-        <h4 style="margin-block-start:0.2em;">Researcher. Engineer. Entrepreneur.</h4>
+        <h4 class="hero-tagline">Researcher. Engineer. Entrepreneur.</h4>
         <br>
         <div class="collapse navbar-collapse"></div>
 
         <div class="container p-5 ">
-          <nav class="navbar navbar-expand-lg navbar-light bg-light" style="display: inline-flex;">
+          <nav class="navbar navbar-expand-lg navbar-light bg-light hero-social-nav">
             <ul class="navbar-nav">
               <li class="nav-item"><a class="nav-link" href="http://www.linkedin.com/in/anudeepnrao"
                   title="Anudeep on LinkedIn" target="_blank"><i class="fa-brands fa-linkedin"></i><br>LinkedIn</a>
@@ -63,21 +62,10 @@
         <br><br>
 
         <!--<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">  -->
-        <nav>
+        <nav class="navbar navbar-light justify-content-center">
           <div class="container">
             <!-- <a class="navbar-brand" href="index.html" style="font-family: 'Noto Sans' , sans-serif;font-size:24px;">Anudeep Zhang</a>   -->
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header">
-              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
-                <a class="more" id="header__more" title="Learn more" href="#aboutMe">↓</a>
-                <!--<span class="sr-only">Toggle navigation</span>
-          						<span class="icon-bar"></span>
-          						<span class="icon-bar"></span>
-          						<span class="icon-bar"></span>  -->
-              </button>
-            </div>
-
-            <!-- Collect the nav links, forms, and other content for toggling -->
+            <a class="more btn btn-outline-light" id="header__more" title="Learn more" href="#aboutMe">↓</a>
 
           </div>
         </nav>
@@ -87,7 +75,7 @@
 
 
 
-  <div class="navbar sticky-top navbar-light bg-light " id="navscroll" style="padding-top:30px">
+  <div class="navbar sticky-top navbar-light bg-light navscroll" id="navscroll">
     <a class="navbar-brand" href="#">Anudeep N Rao</a>
     <ul class="nav nav-pills">
       <li class="nav-item"><a class="nav-link" href="#aboutMe">About</a></li>
@@ -138,15 +126,14 @@
       <h3>Professional Experience</h3>
       <div class="nav flex-column">
         <div class="row align-items-start">
-          <div class="client column"
-            style="height:50px; background:#efefea url(img/GFS.png) no-repeat scroll center; background-size: contain;width:10rem;">
+          <div class="client column client-logo client-logo-gfs" style="width:10rem;">
           </div>
           <span class="company">
             <h5><a href="https://gf.com">Globalfoundries</a>, Bengaluru — Senior Applications Engineer</h5>
           </span>
-          <span class="company-time" style="margin-top:0;">FEB 2024 - PRESENT</span>
+          <span class="company-time company-time-tight">FEB 2024 - PRESENT</span>
           <br>
-          <p style="width:60%;">
+          <p class="company-description">
             Guiding customers with Design-Enablement and Process Design Kits across product lines like -
             <ul>
               <li>Power</li>
@@ -158,31 +145,29 @@
           <span class="underline"></span>
         </div>
         <div class="row align-items-start">
-          <div class="client column"
-            style="height:50px; background:#efefea url(img/ATS_logo.jpg) no-repeat scroll center; background-size: contain;width:10rem;">
+          <div class="client column client-logo client-logo-ats" style="width:10rem;">
           </div>
           <span class="company">
             <h5><a href="https://autotecsystems.com">AutoTEC Systems</a>, Bengaluru — RF Engineer</h5>
           </span>
-          <span class="company-time" style="margin-top:0;">OCT 2019 - JUN 2022</span>
+          <span class="company-time company-time-tight">OCT 2019 - JUN 2022</span>
           <br>
-          <p style="width:60%;">
+          <p class="company-description">
             RF Front-end design and Firmware development. Characterization and Documentation of RF Systems as per
             AS9100D and MIL39012.
           </p>
           <span class="underline"></span>
         </div>
         <div class="row align-items-start">
-          <div class="client column"
-            style="height:50px; background:#efefea url(img/anr_logo1_small.webp) no-repeat scroll center; background-size: contain;width:10rem;">
+          <div class="client column client-logo client-logo-anr" style="width:10rem;">
           </div>
           <span class="company">
             <h5><a href="https://anrlabs.co.in">ANR Labs</a>, Bengaluru — Founder/Engineer</h5>
           </span>
-          <span class="company-time" style="margin-top:0;">FEB 2016 - PRESENT</span>
+          <span class="company-time company-time-tight">FEB 2016 - PRESENT</span>
           <br>
-          <p style="width:60%;">
-          <ul style="margin-inline-start: 2rem;">
+          <p class="company-description">
+          <ul class="company-list-indented">
             <li>Design and Development of Customised Evaluation Boards.</li>
             <li>E-commerce Web Infrastructure Design.</li>
           </ul>
@@ -192,15 +177,14 @@
 
 
         <div class="row align-items-start">
-          <div class="client column"
-            style="height:50px; background:#efefea url(img/0.jpg) no-repeat scroll center; background-size: contain;width:10rem;">
+          <div class="client column client-logo client-logo-abhyuditha" style="width:10rem;">
           </div>
           <span class="company">
             <h5><a href="#">Abhyuditha Tech Solutions</a>, Ujire — Lead Engineer</h5>
           </span>
-          <span class="company-time" style="margin-top:0;">SEP 2018 - JUN 2019</span>
+          <span class="company-time company-time-tight">SEP 2018 - JUN 2019</span>
           <br>
-          <p style="width:60%;">
+          <p class="company-description">
             R&D and Assembly Line Supervision.
           </p>
           <span class="underline"></span>
@@ -208,16 +192,15 @@
 
 
         <div class="row align-items-start">
-          <div class="client column"
-            style="height:50px; background:#efefea url(img/rb.jpg) no-repeat scroll center; background-size: contain;width:10rem;">
+          <div class="client column client-logo client-logo-rb" style="width:10rem;">
           </div>
           <span class="company">
             <h5><a href="https://www.bosch-softwaretechnologies.com/en/">Robert Bosch GmbH</a>, Bengaluru — Project
               Intern</h5>
           </span>
-          <span class="company-time" style="margin-top:0;">SEP 2018 - JUN 2019</span>
+          <span class="company-time company-time-tight">SEP 2018 - JUN 2019</span>
           <br>
-          <p style="width:60%;">
+          <p class="company-description">
             DNOX SCR Systems Debugging using INCA and CANalyzer.
           </p>
           <span class="underline"></span>
@@ -232,15 +215,14 @@
       <h3>Voluntary Experience</h3>
       <div class="nav flex-column">
         <div class="row align-items-start">
-          <div class="client column"
-            style="height:50px; background:#efefea url(img/sdmit.jpg) no-repeat scroll center; background-size: contain;width:10rem;">
+          <div class="client column client-logo client-logo-sdmit" style="width:10rem;">
           </div>
           <span class="company">
             <h5><a href="https://sdmit.in">SDM Institute of Technology</a>, Ujire — Technical Co-ordinator</h5>
           </span>
-          <span class="company-time" style="margin-top:0;">SEP 2017 - APR 2018</span>
+          <span class="company-time company-time-tight">SEP 2017 - APR 2018</span>
           <br>
-          <p style="width:60%;">
+          <p class="company-description">
             Technical coordinator for Teachers' Day Celebration (5th September 2017) and Annual Day Celebrations
             (26th &27th April 2018).
           </p>
@@ -255,29 +237,27 @@
       <h3>Education</h3>
       <div class="nav flex-column">
         <div class="row align-items-start">
-          <div class="client column"
-            style="height:50px; background:#efefea url(img/rvce.png) no-repeat scroll center; background-size: contain;width:10rem;">
+          <div class="client column client-logo client-logo-rvce" style="width:10rem;">
           </div>
           <span class="company">
             <h5><a href="https://rvce.edu.in">RV College of Engineering</a>, Bengaluru — Master of Technology (MTech)</h5>
           </span>
-          <span class="company-time" style="margin-top:0;">FEB 2023 - DEC 2024</span>
+          <span class="company-time company-time-tight">FEB 2023 - DEC 2024</span>
           <br>
-          <p style="width:60%;">
+          <p class="company-description">
             VLSI and Embedded Systems
           </p>
           <span class="underline"></span>
         </div>
 	      <div class="row align-items-start">
-          <div class="client column"
-            style="height:50px; background:#efefea url(img/sdmit.jpg) no-repeat scroll center; background-size: contain;width:10rem;">
+          <div class="client column client-logo client-logo-sdmit" style="width:10rem;">
           </div>
           <span class="company">
             <h5><a href="https://sdmit.in">SDM Institute of Technology</a>, Ujire — Bachelor of Engineering (BE)</h5>
           </span>
-          <span class="company-time" style="margin-top:0;">AUG 2015 - JUN 2019</span>
+          <span class="company-time company-time-tight">AUG 2015 - JUN 2019</span>
           <br>
-          <p style="width:60%;">
+          <p class="company-description">
             Electronics and Communication Engineering
           </p>
           <span class="underline"></span>
@@ -340,10 +320,10 @@
 
   </div>
   <section>
-    <span style="height:5em"></span>
+    <span class="footer-spacer"></span>
   </section>
   <section>
-    <span style="height:5em"></span>
+    <span class="footer-spacer"></span>
   </section>
 
 
